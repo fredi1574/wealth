@@ -38,7 +38,7 @@ class FinancialGoal {
     String? colorHex,
   }) {
     return FinancialGoal(
-      id: this.id,
+      id: id,
       title: title ?? this.title,
       currentAmount: currentAmount ?? this.currentAmount,
       targetAmount: targetAmount ?? this.targetAmount,
@@ -56,8 +56,8 @@ class NetWorthState {
     required this.totalBalance,
     List<Transaction>? transactions,
     List<FinancialGoal>? goals,
-  }) : this.transactions = transactions ?? [],
-       this.goals = goals ?? [];
+  }) : transactions = transactions ?? [],
+       goals = goals ?? [];
 
   NetWorthState copyWith({
     double? totalBalance,

@@ -220,7 +220,7 @@ class _LogGroupCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFF1E2228),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: Colors.white.withOpacity(0.05)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.05)),
       ),
       child: ExpansionTile(
         initiallyExpanded: true,
@@ -298,7 +298,7 @@ class _TransactionItem extends StatelessWidget {
                   ? Icons.shopping_bag_outlined
                   : Icons.account_balance_wallet_outlined,
               size: 14,
-              color: Colors.white.withOpacity(0.5),
+              color: Colors.white.withValues(alpha: 0.5),
             ),
           ),
           const SizedBox(width: 12),
